@@ -15,7 +15,7 @@ import com.example.myapp.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnAlert, btnLogin, btnActivity;
+    private Button btnAlert, btnLogin, btnActivity, btnMenu, btnList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +54,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         // End for basic activity page
+
+        // For menu activity page
+        btnMenu = (Button) findViewById(R.id.btn_menu);
+        btnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, MenuActivity.class);
+                startActivity(i);
+            }
+        });
+        // End for menu activity page
+
+        // For list activity page
+        btnList = (Button) findViewById(R.id.btn_list);
+        btnList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(i);
+            }
+        });
+        // End for list activity page
 
     }
 

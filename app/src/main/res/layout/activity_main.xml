@@ -37,4 +37,18 @@
         android:elevation="0dp"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:text="Munculkan halaman menu"
+        android:elevation="0dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_list"
+        android:layout_width="wrap_content"
+        android:text="Munculkan halaman list"
+        android:elevation="0dp"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
